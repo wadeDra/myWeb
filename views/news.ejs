@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<%- include('head'); %>
+<body>
+<div class="container">
+
+    <%- include('header'); %>
+    <div class="s-bg-image new-bg" style="background-image: url(<%=banner%>)">
+        <div class="container">
+            <div class="s-title tc">
+                <h1 class="aus-f1-title"><strong><%=title%></strong></h1>
+                <h3 class="aus-f1-h3"><%=desc%></h3>
+            </div>
+        </div>
+        <div class="s-bright-arrow">
+            <div class="a1" style="border-color: rgb(242, 242, 242);"></div>
+            <div class="a2" style="border-color: rgb(242, 242, 242);"></div>
+        </div>
+    </div>
+    <div class="main">
+        <section class="s1-section bg-gray">
+            <div class="container">
+                <div class="mb50 f-black tc">
+                    <div class="s1-title">
+                        <strong><%=subtitle%></strong>
+                    </div>
+                    <div class="s-subtitle mb10">
+                        <div class="s-component s1-text">
+                            <div class=""><%=subdesc%></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s1-items">
+                  <%for (var i=0;i<list.length;i++){%>
+                    <div class="s1-item clearfix mb30" id="news-<%=i+1%>">
+                        <img src="<%=list[i].image.src%>" alt="news">
+                        <div class="s1-news bg-white">
+                            <strong class="f24"><%=list[i].title%></strong>
+                            <div class="f14">
+                              <%=list[i].content%>
+                            </div>
+                        </div>
+                    </div>
+                  <%}%>
+                </div>
+                <div class="tc">
+                    <div class="btn aus-s1-btn" id="addNews" onclick="addNews()"><%=knowMore%></div>
+                </div>
+            </div>
+        </section>
+        <%- include('footer'); %>
+    </div>
+</div>
+<%- include('script'); %>
+<script src="js/jquery.min.js"></script>
+<script>
+  var newsCount = 1
+
+  function addNews() {
+    for (var i = newsCount; i < newsCount + 3; i++) {
+      var dom = $('#news-'+ i)
+      console.log(dom)
+      if (dom.length === 1) {
+        dom.fadeIn()
+      } else {
+        $('#addNews').hide()
+      }
+    }
+    newsCount = newsCount + 3
+  }
+
+  addNews()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<%- include('head'); %>
+<body>
+<div class="container">
+
+    <%- include('header'); %>
+    <div class="s-bg-image about-bg" style="background-image: url(<%=banner%>)">
+        <div class="container">
+            <div class="s-title tc">
+                <h1 class="aus-f1-title"><strong><%=title%></strong></h1>
+                <h3 class="aus-f1-h3"><!--1077+ 位赴澳旅游客户的选择--> &nbsp </h3>
+            </div>
+        </div>
+        <div class="s-bright-arrow">
+            <div class="a1" style="border-color: rgb(242, 242, 242);"></div>
+            <div class="a2" style="border-color: rgb(242, 242, 242);"></div>
+        </div>
+    </div>
+    <div class="main">
+        <section class="s1-section bg-gray">
+            <div class="container f-black">
+                <div class="mb50 tc">
+                    <div class="s1-title">
+                        <strong><%=subtitle%></strong>
+                    </div>
+                    <div class="s-subtitle mb10">
+                        <div class="s-component s1-text">
+                            <div class=""><%=desc%></div>
+                        </div>
+                    </div>
+                </div>
+              <%for (var i=0;i<content.length;i++){%>
+                <div class="ab-title tl mb30">
+                    <div class="f20 f-bold">
+                      <%=content[i].title%>
+                    </div>
+                    <div class="f16">
+                      <%=content[i].content%>
+                    </div>
+                </div>
+              <%}%>
+                <img src="<%=img%>" alt="about" style="width: 100%" class="mb30">
+                <div class="clearfix" id="about-map">
+                    <div class="about-map fl">
+                        <img src="<%=address[''].image.src%>" alt="about">
+                        <!--<img src="./image/maps.jpeg" alt="about">-->
+                    </div>
+                    <div class="about-contact fl">
+                        <div class="mb10">
+                            <img src="./image/icons/address.png" alt="" width="20">
+                            <span class="pl5"><%=address[''].address%></span>
+                        </div>
+                        <div class="mb10">
+                            <img src="./image/icons/schedule.png" alt="" width="20">
+                            <span class="pl5"><%=address[''].schedule%></span>
+                        </div>
+                        <div class="mb10">
+                            <!--<i style="vertical-align: middle" aria-hidden="true"></i>-->
+                            <img src="./image/icons/phone.png" alt="" width="22">
+                            <span class="pl5"><%=address[''].phone%></span>
+                        </div>
+                        <div class="mb10">
+                            <img src="./image/icons/email.png" alt="" width="21">
+                            <span class="pl5"><%=address[''].email%></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('footer'); %>
+    </div>
+</div>
+<%- include('script'); %>
+</body>
+</html>

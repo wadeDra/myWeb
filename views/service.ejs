@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<%- include('head'); %>
+<body>
+<div class="container">
+
+    <%- include('header'); %>
+    <div class="s-bg-image service_banner-bg" style="background-image: url(<%=banner%>)">
+        <div class="container">
+            <div class="s-title tc">
+                <h1 class="aus-f1-title"><strong><%=title%></strong></h1>
+                <h3 class="aus-f1-h3"><%=desc%></h3>
+            </div>
+        </div>
+        <div class="s-bright-arrow">
+            <div class="a1" style="border-color: rgb(255, 255, 255);"></div>
+            <div class="a2" style="border-color: rgb(255, 255, 255);"></div>
+        </div>
+    </div>
+    <div class="main pt80">
+      <%for (var i=0;i<list.length;i++){%>
+        <section class="service-bg service-bg-<%=(i+1)%> clearfix">
+            <div class="service-desc fl f-black">
+                <strong class="f36"><%=list[i].title%></strong>
+                <div class="f14">
+                  <%=list[i].content%>
+                </div>
+            </div>
+            <div class="service-img fl tr">
+                <img src="<%=list[i].image.src%>" alt="service">
+            </div>
+        </section>
+
+      <%}%>
+        <div class="tc">
+            <a href="about#about-map" class="btn aus-s1-btn"><%=contactUs%></a>
+        </div>
+        <%- include('footer'); %>
+    </div>
+</div>
+<%- include('script'); %>
+</body>
+</html>
