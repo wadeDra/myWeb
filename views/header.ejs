@@ -1,39 +1,98 @@
-<div class="aus-header">
-    <div class="aus-inner clearfix">
-        <h1>
-            <div>
-                <img src="./image/logo.png" alt="logo" class="aus-logo aus-logo-white">
-                <img src="./image/logo_dark.png" alt="logo" class="aus-logo aus-logo-dark">
-            </div>
-        </h1>
-        <nav>
-            <div class="nav-item">
-                <a href="/index" class="nav-href"><%=nav.home%></a>
-            </div>
-            <div class="nav-item">
-                <a href="/service" class="nav-href"><%=nav.service%></a>
-            </div>
-            <div class="nav-logo">
-                <!--<a href="#" class="nav-logo tc">-->
-                <div>
-                    <img src="./image/logo.png" alt="logo" class="aus-logo aus-logo-white">
-                    <img src="./image/logo_dark.png" alt="logo" class="aus-logo aus-logo-dark">
-                </div>
-                <div class="nav-logo-text">
-                    Australian Postcard
-                </div>
-                <!--<div>Australian Postcard</div>-->
-                <!--</a>-->
-            </div>
-            <div class="nav-item">
-                <a href="/news" class="nav-href"><%=nav.news%></a>
-            </div>
-            <div class="nav-item">
-                <a href="/about" class="nav-href"><%=nav.about%></a>
-            </div>
-            <div class="lang-item">
-                <a href="#" onclick="changeLang()" class="nav-href">中 | ENG</a>
-            </div>
-        </nav>
+<header id="header" class="site-header" role="banner">
+
+    <div class="site-branding">
+        <h1 class="site-title"><a href="./zh-hans/" rel="home">CANDY'S JEWELRY</a></h1>
+        <div class="site-header-line site-header-line--icon"></div>
     </div>
-</div>
+
+    <div class="site-tools">
+
+        <div class="back-to-top">
+            <a href="#top">top</a>
+        </div>
+
+        <div class="language-switcher">
+
+            <span class="language-switcher--label">语言<span class="meta">:</span></span>
+
+            <ul class="language-switcher--list">
+                <li><a href="./index_en.html">EN</a></li>
+                <li class="current-item"><a href="/">简体中文</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="site-navigation">
+
+        <nav id="navigation-main" class="navigation-main" role="navigation">
+
+            <a href="#menu-primary-container" class="menu-toggle"><span>菜单
+</span></a>
+
+            <div id="menu-primary-container" class="menu-primary-container">
+                <ul id="menu-primary" class="menu">
+                    <li id="menu-item-49391"
+                        class="drawer--double-menu collections menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49391">
+                        <a href="#">珠宝系列</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-8297"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8297">
+                                <a href="#">浏览类别</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-19791"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19791">
+                                        <a href="/categories/rings">戒指</a></li>
+                                    <li id="menu-item-19792"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19792">
+                                        <a href="/categories/bracelets/">手链</a></li>
+                                    <li id="menu-item-19793"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19793">
+                                        <a href="/categories/necklaces/">项链</a></li>
+                                    <li id="menu-item-19794"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19794">
+                                        <a href="/categories/pendants/">吊坠</a></li>
+                                    <li id="menu-item-19795"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19795">
+                                        <a href="/categories/earrings/">耳环</a></li>
+                                    <li id="menu-item-19795"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19795">
+                                        <a href="/categories/earrings/">胸针</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-19856"
+                        class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
+                                href="#">婚嫁系列</a></li>
+                    <li id="menu-item-8366"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8366">
+                        <a href="#">品牌</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-8367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8367">
+                                <a href="story">Candy's的故事</a></li>
+                            <li id="menu-item-51335"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51335"><a
+                                        href="exhibitions">展览</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-19856"
+                        class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
+                                href="stores">店铺信息</a></li>
+                    <li id="menu-item-19856"
+                        class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
+                                href="#">定制流程</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <div class="drawers nav-drawers loading">
+        </div>
+
+    </div>
+
+
+</header>

@@ -1,5 +1,6 @@
 import Router from 'koa-router'
 import indexCtrl from '../controllers/indexCtrl'
+import categoryCtrl from '../controllers/categoryCtrl'
 import newsCtrl from '../controllers/newsCtrl'
 import serviceCtrl from '../controllers/serviceCtrl'
 import aboutCtrl from '../controllers/aboutCtrl'
@@ -15,9 +16,8 @@ const router = Router()
  */
 router.get('/', indexCtrl)
 router.get('/index', indexCtrl)
-router.get('/news', newsCtrl)
-router.get('/service', serviceCtrl)
-router.get('/about', aboutCtrl)
+router.get('/categories/:name', categoryCtrl)
+router.get('/:name', routerCtrl)
 
 /**
  * admin后台所需接口

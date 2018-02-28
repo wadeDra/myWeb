@@ -8,104 +8,7 @@
   </a>
 
 
-  <header id="header" class="site-header" role="banner">
-
-    <div class="site-branding">
-      <h1 class="site-title"><a href="./zh-hans/" rel="home">CANDY'S JEWELRY</a></h1>
-      <div class="site-header-line site-header-line--icon"></div>
-    </div>
-
-    <div class="site-tools">
-
-      <div class="back-to-top">
-        <a href="#top">top</a>
-      </div>
-
-      <div class="language-switcher">
-
-        <span class="language-switcher--label">语言<span class="meta">:</span></span>
-
-        <ul class="language-switcher--list">
-          <li><a href="./index_en.html">EN</a></li>
-          <li class="current-item"><a href="/">简体中文</a></li>
-        </ul>
-
-      </div>
-
-    </div>
-
-    <div class="site-navigation">
-
-      <nav id="navigation-main" class="navigation-main" role="navigation">
-
-        <a href="#menu-primary-container" class="menu-toggle"><span>菜单
-</span></a>
-
-        <div id="menu-primary-container" class="menu-primary-container">
-          <ul id="menu-primary" class="menu">
-            <li id="menu-item-49391"
-                class="drawer--double-menu collections menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49391">
-              <a href="./zh-hans/jewellery/">珠宝系列</a>
-              <ul class="sub-menu">
-                <li id="menu-item-8297"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8297">
-                  <a href="#">浏览类别</a>
-                  <ul class="sub-menu">
-                    <li id="menu-item-19791"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19791">
-                      <a href="./zh-hans/categories/rings/">戒指</a></li>
-                    <li id="menu-item-19792"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19792">
-                      <a href="./zh-hans/categories/bracelets/">手链</a></li>
-                    <li id="menu-item-19793"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19793">
-                      <a href="./zh-hans/categories/necklaces/">项链</a></li>
-                    <li id="menu-item-19794"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19794">
-                      <a href="./zh-hans/categories/pendants/">吊坠</a></li>
-                    <li id="menu-item-19795"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19795">
-                      <a href="./zh-hans/categories/earrings/">耳环</a></li>
-                    <li id="menu-item-19795"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-graff_jewel_category menu-item-19795">
-                      <a href="./zh-hans/categories/earrings/">胸针</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li id="menu-item-19856"
-                class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
-                      href="./zh-hans/stores/">婚嫁系列</a></li>
-            <li id="menu-item-8366"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8366">
-              <a href="./zh-hans/house/">品牌</a>
-              <ul class="sub-menu">
-                <li id="menu-item-8367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8367">
-                  <a href="./zh-hans/house/graff/">Candy's的故事</a></li>
-                <li id="menu-item-51335"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51335"><a
-                          href="./zh-hans/house/exhibitions/">展览</a></li>
-              </ul>
-            </li>
-            <li id="menu-item-19856"
-                class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
-                      href="./zh-hans/stores/">店铺信息</a></li>
-            <li id="menu-item-19856"
-                class="drawer--stores menu-item menu-item-type-post_type menu-item-object-page menu-item-19856"><a
-                      href="./zh-hans/stores/">定制流程</a></li>
-          </ul>
-        </div>
-
-      </nav>
-
-
-      <div class="drawers nav-drawers loading">
-      </div>
-
-    </div>
-
-
-  </header>
+  <%- include('header'); %>
 
   <div id="content" class="site-content">
 
@@ -143,7 +46,7 @@
                 <h1 class="large-title" style="text-align: center;color: white">珍罕色彩</h1>
                 <h2 style="text-align: center;color: white">令人屏息的艳丽之色</h2>
                 <p style="text-align: center;color: white"><a class="button button-secondary"
-                                                              href="./zh-hans/campaigns/rainbow-rarity/">探索更多</a>
+                                                              href="/categories/necklaces">探索更多</a>
                 </p>
 
               </div>
@@ -180,7 +83,7 @@
               <h4>探索</h4>
               <h2>独特珍品</h2>
               <p>从瑰丽高级珠宝，以至传奇名钻，每一件也是CANDY'S最令人惊艳的珍罕瑰宝。</p>
-              <p><a class="button button-primary" href="./zh-hans/unique/#high-jewellery">探索更多</a>
+              <p><a class="button button-primary" href="/categories/pendants">探索更多</a>
               </p>
 
 
@@ -215,7 +118,7 @@
               <h2>Classic CANDY'S</h2>
               <p>永恒优雅的珍宝。瑰丽脱俗、演绎经典。</p>
               <p><a class="button button-primary"
-                    href="./zh-hans/collections/classic-graff/">探索更多</a></p>
+                    href="/categories/earrings">探索更多</a></p>
 
 
             </div>
@@ -250,7 +153,7 @@
               <h4>体验</h4>
               <h2>CANDY'S婚嫁系列</h2>
               <p>精挑细选的非凡美钻，为爱、盼望与热情添上醉人光芒。</p>
-              <p><a class="button button-secondary" href="./zh-hans/bridal/">探索更多</a></p>
+              <p><a class="button button-secondary" href="/categories/pendants">探索更多</a></p>
 
 
             </div>
@@ -311,7 +214,7 @@
             <h2>The Eternal Twins</h2>
             <p>从同一颗原石切割而成的一双D色无瑕钻石耳环，各重50.23克拉，完美匹配。</p>
             <p><a class="button button-primary"
-                  href="./zh-hans/unique/famous-diamonds/the-eternal-twins/">探索更多</a></p>
+                  href="/categories/pendants/">探索更多</a></p>
           </div>
         </div>
 
@@ -413,7 +316,7 @@
             <h2>与众不同的CANDY'S</h2>
             <p>婚嫁系列中的每一颗钻石，也由CANDY'S的家族成员亲手挑选。</p>
             <p><a class="button button-primary"
-                  href="./zh-hans/bridal/bridal-guides/">了解更多</a></p>
+                  href="/categories/bracelets">了解更多</a></p>
           </div>
         </div>
 
@@ -465,7 +368,7 @@
             <h2>CANDY'S设计特色</h2>
             <p>探索CANDY'S腕表别具一格、令人难忘的设计特色。</p>
             <p><a class="button button-primary"
-                  href="./zh-hans/watches/hallmarks-graff-watch/">了解更多</a></p>
+                  href="/categories/bracelets">了解更多</a></p>
           </div>
         </div>
 
@@ -516,7 +419,7 @@
           <div class="inner">
             <h2>CANDY'S的故事</h2>
             <p>探索CANDY'S钻石的奇妙旅程。</p>
-            <p><a class="button button-primary" href="./zh-hans/house/graff/">了解更多</a></p>
+            <p><a class="button button-primary" href="/story">了解更多</a></p>
           </div>
         </div>
 
@@ -543,43 +446,8 @@
   </div>
   <%- include('footer'); %>
 
-  <footer class="site-footer">
-
-
-    <div class="colophon">
-
-      <!--
-            <nav class="navigation-footer" role="navigation">
-              <ul class="menu menu-footer">
-                <li id="menu-item-25802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25802"><a
-                  href="./zh-hans/legals/">法律条款</a></li>
-                <li id="menu-item-25803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25803"><a
-                  href="./zh-hans/contact/">联系我们</a></li>
-                <li id="menu-item-19863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19863"><a
-                  href="./zh-hans/stores/">珠宝店</a></li>
-              </ul>
-            </nav>
-      -->
-
-
-      <div class="site-info">
-        <span class="copyright">&copy; 2018 CANDY'S</span>
-      </div>
-
-    </div>
-
-  </footer>
 
 </div>
-
-
-<div class="wechat-qr">
-	<span class="wechat-qr-content">
-		<span class="wechat-qr-img"></span>
-		<span class="wechat-qr-title">Scan via WeChat App to follow Graff</span>
-	</span>
-</div>
-
 <%- include('script'); %>
 
 </body>

@@ -1,10 +1,5 @@
-let service = require('../services/index')
-import langData from './data'
-
 export default async (ctx, next) => {
-  const langDefault = 'en';
-  let lang = ctx.cookies.get('lang') || langDefault;
-
+  const name = ctx.params.name
 /*
   let home = await service.findOneHome(lang)
   let news = await service.findOneNews(lang)
@@ -13,5 +8,5 @@ export default async (ctx, next) => {
   console.log(pageData)
 */
 
-  await ctx.render('index')
+  await ctx.render('categories/' + name)
 }
