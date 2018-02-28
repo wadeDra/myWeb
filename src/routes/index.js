@@ -4,6 +4,7 @@ import categoryCtrl from '../controllers/categoryCtrl'
 import newsCtrl from '../controllers/newsCtrl'
 import serviceCtrl from '../controllers/serviceCtrl'
 import aboutCtrl from '../controllers/aboutCtrl'
+import routerCtrl from '../controllers/routerCtrl'
 import apiCtrl from '../controllers/apiCtrl'
 
 import upload from '../controllers/upload'
